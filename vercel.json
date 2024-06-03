@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "middleware.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/middleware",
+      "dest": "middleware.ts"
+    }
+  ]
+}
